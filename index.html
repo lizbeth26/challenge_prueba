@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title></title>
-	
-	<link rel="stylesheet" href="styles.css">
-
+	<link rel="stylesheet" href="./css/styles.css">
+	<title>Encriptador | Challenge One</title>
 </head>
-<body>
-	<h1 class="title_size" > Hola mundo</h1>
 
+<body>
+	<header class="nav-bar">
+		<img src="./img/logo_alura.png" alt="">
+	</header>
+
+	<main class="content">
+		<section class="section-left">
+			<textarea name="inputMessage" id="inputMessage" cols="30" rows="10"></textarea>
+
+			<div class="footer">
+				<span>Solo letras minúsculas sin acentos.</span>
+				<div class="buttons">
+					<button id="btnEncript" onclick="showText()">Encriptar</button>
+					<button id="btnDencript">Desencriptar</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-right">
+			<div class="card">
+				<img id="imageCard" class="image" src="./img/asset_container.png" alt="Not Found">
+				<p id="message" class="message"></p>
+				<button id="btnCopy" class="btn-copy">Copiar</button>
+			</div>
+		</section>
+	</main>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>
